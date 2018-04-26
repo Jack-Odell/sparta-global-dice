@@ -36,3 +36,10 @@ h2 {
   margin-top: 18px;
   background-color: black;
 }
+
+.innerSquare {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
