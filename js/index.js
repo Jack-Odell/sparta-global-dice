@@ -31,6 +31,10 @@ var turnOffDot = new function () {
   this.Nine = function () {diceSquareNine.style.display = "none";}
 }
 
+var reloadPage = function () {
+  location.reload();
+}
+
 function showOne () {
   turnOffDot.One();
   turnOffDot.Two();
@@ -53,12 +57,12 @@ function showTwo () {
 }
 
 function showThree() {
-  turnOffDot.One();
   turnOffDot.Two();
   turnOffDot.Three();
+  turnOffDot.Four();
+  turnOffDot.Six();
   turnOffDot.Seven();
   turnOffDot.Eight();
-  turnOffDot.Nine();
 }
 function showFour() {
   turnOffDot.Two();
@@ -78,6 +82,7 @@ function showSix() {
   turnOffDot.Five();
   turnOffDot.Eight();
 }
+
 
 
 if (diceRoll === 1) {
